@@ -5,7 +5,7 @@ const BodyWrapper = styled.div`
     display: flex;
     justify-content: center;
     align-items:center;
-    height: 1500px;
+    height: 2000px;
     background-color: #e2e2e27a;
     font-family: 'Playfair Display', serif;
 
