@@ -1,11 +1,11 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import styled from 'styled-components'
 
 const BodyWrapper = styled.div`
     display: flex;
     justify-content: center;
     align-items:center;
-    height: 1500px;
+    height: ${props => props.displayHeight}px;
     background-color: #e2e2e27a;
     font-family: 'Playfair Display', serif;
 
@@ -37,12 +37,16 @@ const Text = styled.div`
     display: flex;
     font-size: 4vw;
 `
-
-
+    
 
 const PlaceHolder = () => {
+    const [windowHeight, setWindowHeight] = useState(2000)
+    useEffect(() => {
+            setWindowHeight(window.innerHeight)
+      })
+        const displayHeight = windowHeight + 200
     return (
-        <BodyWrapper>
+        <BodyWrapper displayHeight={displayHeight}>
             <CenterWrapper>
                 <Title>10<Gold>K</Gold>Construction</Title>
                 <Text>We are currently under development </Text>
