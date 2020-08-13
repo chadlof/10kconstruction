@@ -9,7 +9,7 @@ const BodyWrapper = styled.div`
     background-color: #e2e2e27a;
     font-family: 'Playfair Display', serif;
 
-    @media only screen and (min-width: 600px) {
+    @media only screen and (min-width: 400px) {
         height: 1000px;
 }
 `
