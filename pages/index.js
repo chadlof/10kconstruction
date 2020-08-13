@@ -5,13 +5,11 @@ const BodyWrapper = styled.div`
     display: flex;
     justify-content: center;
     align-items:center;
-    height: 2000px;
+    height: 1500px;
     background-color: #e2e2e27a;
     font-family: 'Playfair Display', serif;
 
-    @media screen and (min-width: 800px) {
-        height: 1000px;
-}
+
 `
 const CenterWrapper = styled.div`
     display: flex;
