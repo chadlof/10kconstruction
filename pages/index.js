@@ -5,7 +5,7 @@ const BodyWrapper = styled.div`
     display: flex;
     justify-content: center;
     align-items:center;
-    height: 1000px;
+    min-height: 2000px;
     background-color: #e2e2e27a;
     font-family: 'Playfair Display', serif;
 
@@ -19,13 +19,13 @@ const CenterWrapper = styled.div`
 `
 const Title = styled.div`
     display: flex;
-    font-size: 10vw;
+    font-size: 8vw;
     padding-bottom: 20px;
     align-items: baseline;
 
 `
 const Gold = styled.div`
-    font-size: 12vw;
+    font-size: 10vw;
     color: #D4AF37;
     position: relative;
 	text-transform: uppercase;	
@@ -34,7 +34,7 @@ const Gold = styled.div`
 `
 const Text = styled.div`
     display: flex;
-    font-size: 6vw;
+    font-size: 4vw;
 `
 
 
