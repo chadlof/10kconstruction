@@ -52,13 +52,17 @@ const PlaceHolder = () => {
             <Head>
                 {/* <!-- Global site tag (gtag.js) - Google Analytics --> */}
                 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-96904801-2"></script>
-                <script>
-                window.dataLayer = window.dataLayer || [];
-                function gtag(){dataLayer.push(arguments);}
-                gtag('js', new Date());
+                <script
+                    dangerouslySetInnerHTML={{
+                    __html: `
+                        window.dataLayer = window.dataLayer || [];
+                        function gtag(){dataLayer.push(arguments);}
+                        gtag('js', new Date());
 
-                gtag('config', 'UA-96904801-2');
-                </script>
+                        gtag('config', 'UA-96904801-2');
+                        `,
+                    }}
+                />
             </Head>
             <CenterWrapper>
                 <Title>10<Gold>K</Gold>Construction</Title>
