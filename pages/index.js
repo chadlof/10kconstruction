@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import styled from 'styled-components'
+import Head from 'next/head'
+
 
 const BodyWrapper = styled.div`
     display: flex;
@@ -47,6 +49,17 @@ const PlaceHolder = () => {
         const displayHeight = windowHeight + 200
     return (
         <BodyWrapper displayHeight={displayHeight}>
+            <Head>
+                {/* <!-- Global site tag (gtag.js) - Google Analytics --> */}
+                <script async src="https://www.googletagmanager.com/gtag/js?id=UA-96904801-2"></script>
+                <script>
+                window.dataLayer = window.dataLayer || [];
+                function gtag(){dataLayer.push(arguments);}
+                gtag('js', new Date());
+
+                gtag('config', 'UA-96904801-2');
+                </script>
+            </Head>
             <CenterWrapper>
                 <Title>10<Gold>K</Gold>Construction</Title>
                 <Text>We are currently under development </Text>
