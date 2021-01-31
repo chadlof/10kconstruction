@@ -1,43 +1,36 @@
 import React, { useState, useEffect } from 'react'
 import styled from 'styled-components'
 import Head from 'next/head'
+import Image from 'next/image'
+
 
 
 const BodyWrapper = styled.div`
-    display: flex;
-    justify-content: center;
-    align-items:center;
-    height: ${props => props.displayHeight}px;
-    background-color: #e2e2e27a;
-    font-family: 'Playfair Display', serif;
-
-
+  display: flex;
+  justify-content: center;
+  align-items:center;
+  height: ${props => props.displayHeight}px;
+  background-color: #ffffff;
+  font-family: 'Playfair Display', serif;
 `
 const CenterWrapper = styled.div`
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items:center;
-    color: #6b6b6b;
-`
-const Title = styled.div`
-    display: flex;
-    font-size: 8vw;
-    padding-bottom: 20px;
-    align-items: baseline;
-
-`
-const Gold = styled.div`
-    font-size: 10vw;
-    color: #D4AF37;
-    position: relative;
-	text-transform: uppercase;	
-	font-weight: 400;
-
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items:center;
+  color: #6b6b6b;
 `
 const Text = styled.div`
-    display: flex;
-    font-size: 4vw;
+  display: flex;
+  font-size: 1vw;
+  max-width: 60%;
+  margin: 10px;
+`
+const LogoWrapper = styled.div `
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+  max-width: 60%;
 `
     
 
@@ -65,9 +58,15 @@ const PlaceHolder = () => {
                 />
             </Head>
             <CenterWrapper>
-                <Title>10<Gold>K</Gold>Construction</Title>
-                <Text>We are currently under development </Text>
-                <Text>Check back for more updates</Text>
+                <LogoWrapper>
+                  <Image src='/static/10kLogo.png' width='350px' height='auto'alt='10K logo'/>
+                </LogoWrapper>
+                <Text> 10K Construction is a full service general contracting company eager to help you with any of your home's needs. We specialize in everything from exterior storm damage insurance claims to full home remodels and everything in between. We service the entire state of Minnesota from your home in the cities to your cabin in northern MN. Residential, Multi-family, or Commercial we have you covered. Our team of experts are trained and certified to provide excellent service with a quick turnaround time due to our industry leading tradesmen in the field. Our length of experience and time in the industry will help guarantee that you will be glad you picked 10K Construction as your general contractor. </Text>
+                <Text> We strive to make sure our customers have the smoothest experience possible as our partner throughout the entire process. By doing so, we know that following through is an important quality. That’s why, when we say we’re going to do something, we do it! Not when we have time or when it's convenient for us but when you need it done. Equally important is that we will not sacrifice any quality along the way. At 10K Construction, we'll turn your dream project into reality.</Text>
+                <Text> We offer free, no obligation inspections as well as the opportunity to give you a detailed estimate based on the needs of your project at our initial consultation. We will educate you to help you better understand the fine details of the project prior to making a commitment.</Text>
+                <Text> We pride ourselves on our customer service and building lasting relationships as we don't view this as a transaction but as a partnership and a relationship for the future. You can rely on us for any construction project you need. We depend heavily on referrals and the best referral comes from someone who has already experienced this first hand and has worked with us. We look forward to hearing from you and about your construction needs. </Text>
+                <Text> We are currently under development </Text>
+                <Text> Check back for more updates</Text>
             </CenterWrapper>
         </BodyWrapper>
     )
